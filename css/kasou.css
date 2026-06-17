@@ -1,0 +1,626 @@
+@charset "UTF-8";
+
+.boxwrap {
+  /*border-bottom: 5px solid #fccb02;background:#fff;*/
+  overflow: visible;
+  margin: 50px auto 40px auto;
+}
+.box-img {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+.box-img img {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  object-fit: cover;
+  font-family: "object-fit:cover;";
+  margin-top: -50px;
+  z-index: 1;
+}
+.box-txt {
+  padding: 30px 5%;
+}
+.box-txt .fs-013em {
+  border-bottom: 1px solid;
+  padding: 0 0 1em;
+  text-align: center; /*color:#000;*/
+  display: block;
+  font-size: 1.5em;
+}
+/* .box-txt [lang="en"] {
+  text-transform: uppercase;
+  color: #083a71;
+} */
+
+.ff-title {
+  font-weight: 700;
+  content: attr(title);
+  display: block;
+  font-size: 48px;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: -1.1em;
+  color: rgb(208 95 107 / 22%);
+  letter-spacing: 0.1em;
+  position: relative;
+}
+.ff-title.fs-6em {
+  margin-bottom: 0;
+}
+.ff-title.gray {
+  color: rgb(255 255 255 / 28%);
+}
+.ff-title.gray2 {
+  color: rgb(109 109 109 / 11%);
+  z-index: 1;
+}
+
+.haikei {
+  background: #fff7f0;
+  padding: 4em 0;
+}
+
+.haikei-pk {
+  /* background: #fff7f0; */
+  padding-top: 4em;
+}
+
+[class*="flex"] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+[class*="flex"].t-l > li,
+[class*="flex"] .t-l {
+  text-align: left;
+}
+
+.flex-sb {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.flex-sb .w30,
+.flex-sb .w60 {
+  width: 100%;
+  text-align: center;
+}
+
+[class*="flex"] a[class*="flex"] {
+  height: 100%;
+}
+
+.auto {
+  margin: auto;
+}
+
+/* =====================================
+プラン一覧
+===================================== */
+
+.plan-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 5em;
+}
+
+/* =====================================
+カード
+===================================== */
+
+.plan-card {
+  position: relative;
+  background: #fffdf8;
+  border: 1px solid #efe6d7;
+  border-radius: 24px;
+  padding: 30px 20px;
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+/* 人気プラン */
+
+.plan-card.is-popular {
+  border: 2px solid #f4a261;
+}
+
+.plan-badge {
+  position: absolute;
+  top: -1em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #f7d2a4;
+  border-radius: 999px;
+  padding: 6px 18px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #8b5a00;
+}
+
+/* =====================================
+コース名
+===================================== */
+
+.plan-title {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.plan-title.green {
+  background: #8bc34a;
+}
+
+.plan-title.orange {
+  background: #f4a261;
+}
+
+.plan-title.pink {
+  background: #ef9a9a;
+}
+
+/* =====================================
+食数
+===================================== */
+
+.plan-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.plan-count i {
+  font-size: 2.4rem;
+}
+
+.plan-count .num {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.plan-count .meal {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* 色 */
+
+.green .plan-count {
+  color: #8bc34a;
+}
+
+.orange .plan-count {
+  color: #f4a261;
+}
+
+.pink .plan-count {
+  color: #ef9a9a;
+}
+
+/* =====================================
+区切り線
+===================================== */
+
+.plan-divider {
+  width: 100%;
+  height: 1px;
+  background: #efe6d7;
+  margin: 25px 0;
+}
+
+/* =====================================
+説明文
+===================================== */
+
+.plan-text {
+  /* font-size: 1.6rem; */
+  line-height: 2;
+  color: #444;
+}
+
+/* =====================================
+料金表示
+===================================== */
+
+.plan-price {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px dashed #e8ddd0;
+}
+
+.plan-price-unit {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.plan-price-per {
+  line-height: 1.2;
+}
+
+.plan-price-per .yen {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.plan-price-per .tax {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.plan-month {
+  margin-top: 10px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.plan-month .price {
+  font-size: 2rem;
+}
+
+.green .plan-price-per,
+.green .plan-month {
+  color: #8bc34a;
+}
+
+.orange .plan-price-per,
+.orange .plan-month {
+  color: #f4a261;
+}
+
+.pink .plan-price-per,
+.pink .plan-month {
+  color: #ef9a9a;
+}
+
+/* =====================================
+画像
+===================================== */
+
+/* .plan-image {
+  margin-top: 20px;
+}
+
+.plan-image img {
+  width: 120px;
+  height: auto;
+} */
+
+/* ============================
+   table 基本設定（最終マージ版）
+============================ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* td / th 共通 */
+table th,
+table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.72em 1.5em;
+  border-bottom: 1px solid #fff; /* ← 白線に変更 */
+  background: none;
+}
+
+/* th のデザイン（背景：緑、文字：白、線：白） */
+table th {
+  background-color: #f3d3d7; /* 添付サイトの色 */
+  color: #d05f6b;
+  border-bottom-color: #fff; /* ← 白線に統一 */
+}
+
+/* td の背景色（薄いグレー） */
+table td {
+  background-color: #f7f7f7; /* ← 優しい薄グレー */
+}
+
+/* table 内の文字サイズ調整 */
+table p,
+table ul,
+table dl,
+table table {
+  font-size: 1em;
+}
+
+/* ============================
+   s_ttl（thead 固定レイアウト）
+============================ */
+table.s_ttl thead {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+table.s_ttl thead th {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+/* title 属性を見出しとして表示 */
+table.s_ttl tbody th[title]::before,
+table.s_ttl tbody td[title]::before {
+  content: attr(title);
+  margin: 0 8px 2px 0;
+  display: inline-block;
+  background-color: #f9f9f9;
+}
+
+/* ============================
+   form
+============================ */
+.form-table td {
+  line-height: 1.4 !important;
+}
+
+.form-table td label {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  margin: 4px 0 !important;
+  white-space: nowrap !important;
+}
+
+.form-table input[type="radio"] {
+  margin: 0 !important;
+}
+
+.form-table input,
+.form-table select,
+.form-table textarea {
+  width: 100%;
+  padding: 0.6em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #fff;
+}
+
+.form-table textarea {
+  resize: vertical;
+}
+
+.required {
+  display: inline-block;
+  background: #d05f6b;
+  color: #fff;
+  font-size: 0.75em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+.form-submit {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.submit-btn {
+  background: #d05f6b;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.2s;
+  letter-spacing: 0.05em;
+}
+
+.submit-btn:hover {
+  background: #b94f5a;
+}
+
+/*faq*/
+/* アコーディオン全体 */
+.faq {
+  max-width: 736px;
+  margin: 0 auto 5rem;
+  padding: 0 1.5rem;
+}
+
+/* 1つのQ&Aブロック */
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+/* 質問ボタン */
+.accordion-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1.25rem 2.5rem 1.25rem 0;
+  font-size: 1.1rem;
+  font-family: inherit;
+  color: #432;
+  position: relative;
+  line-height: 1.6;
+}
+
+/* 矢印アイコン */
+.accordion-question::after {
+  content: "▼";
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: #d05f6b;
+  transition: transform 0.3s;
+}
+
+/* 開いたときに矢印を反転 */
+.accordion-question.is-open::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* 回答（初期状態：非表示） */
+.accordion-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+/* 回答（開いた状態） */
+.accordion-answer.is-open {
+  max-height: 300px;
+}
+
+.accordion-answer p {
+  padding: 0 0.5rem 1.25rem;
+  color: #432;
+  line-height: 1.8;
+}
+
+/* Q / A ラベル */
+.label-q,
+.label-a {
+  display: inline-block;
+  font-family: "Philosopher", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.label-q {
+  color: #d05f6b;
+}
+.label-a {
+  color: #432;
+}
+
+@media (min-width: 800px) {
+  .boxwrap {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;
+  }
+  /* article:nth-child(odd) .boxwrap .box-img {
+    order: 1;
+  } */
+  .box-img {
+    margin: 0;
+    width: 60%;
+  }
+  .box-txt {
+    padding: 50px 8%;
+    width: 60%;
+  }
+  .box-txt .fs-013em {
+    text-align: left;
+  }
+  .boxwrap::before {
+    top: -60px;
+  }
+  .box-img img {
+    margin: -40px -100px 0 0;
+  }
+  .box-txt {
+    padding: 60px 0% 60px 5%;
+    background-size: 150px;
+  }
+
+  .boxwrap {
+    display: flex;
+    gap: 40px;
+  }
+
+  .boxwrap.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .ff-title {
+    font-size: 6.5em;
+    z-index: 2;
+  }
+  .ff-title.feature {
+    font-size: 7.5em;
+  }
+  .ff-title.fs-6em {
+    font-size: 6em;
+  }
+
+  .w70 {
+    width: 70%;
+  }
+
+  .w80 {
+    width: 80%;
+  }
+
+  .w90 {
+    width: 90%;
+  }
+
+  .plan-wrap {
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .plan-card {
+    width: 320px;
+    padding: 35px 25px;
+    /* transition: 0.3s; */
+  }
+
+  /* .plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  } */
+
+  .plan-card.is-popular {
+    transform: translateY(-10px);
+  }
+
+  /* .plan-card.is-popular:hover {
+    transform: translateY(-15px);
+  } */
+
+  /* .plan-count .num {
+    font-size: 6rem;
+  } */
+  /* 
+  .plan-image img {
+    width: 140px;
+  } */
+
+  .flex-sb {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .flex-sb .w30 {
+    width: 30%;
+  }
+
+  .flex-sb .w60 {
+    width: 60%;
+  }
+  .flex-sb .w60 {
+    text-align: left;
+  }
+}
