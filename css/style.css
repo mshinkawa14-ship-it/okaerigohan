@@ -564,6 +564,10 @@ p {
   width: 30%;
 }
 
+th.w30{
+  width: 100%;
+}
+
 .w60 {
   width: 60%;
 }
@@ -910,6 +914,10 @@ table.s_clearbs tr {
     left: 150%;
     top: 0;
   }
+
+  th.w30{
+  width: 30%;
+}
 
   .spanin span {
     display: inline;
